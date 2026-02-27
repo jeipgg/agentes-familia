@@ -90,20 +90,31 @@ Pídele a la otra persona la invitación al servidor de Discord. Una vez dentro 
 2. Nómbralo: `bitacora-dani`
 3. En permisos, define que solo tú y tus bots pueden publicar
 
-### Paso 2.3 — Crear un webhook para cada canal
+### Paso 2.3 — Crear webhooks para tus canales
 
-Repite este proceso para `#bitacora-dani` y `#laboratorio-agentes`:
+Necesitas un webhook propio para cada canal al que tus agentes van a publicar. Son 4 en total:
+
+| Canal | Tipo | Para qué |
+|---|---|---|
+| `#bitacora-dani` | Privado (tuyo) | Logs internos de tus agentes |
+| `#laboratorio-agentes` | Compartido | Colaboración entre ecosistemas |
+| `#archivo-decisiones` | Compartido | Veredictos finales |
+| `#puente-humano` | Compartido | Comunicación directa entre humanos |
+
+**Nota:** Los canales compartidos ya existen en el servidor. Solo necesitas crear tu propio webhook en cada uno — esto no afecta los webhooks de la otra persona.
+
+Para cada uno de los 4 canales:
 
 1. Haz clic en el canal → **Editar Canal** (ícono de engranaje)
 2. Ve a **Integraciones** → **Webhooks** → **Nuevo Webhook**
-3. Ponle nombre (ej: "Bot Dani") y copia la URL completa
+3. Ponle nombre `Bot Dani` y copia la URL completa
 
 La URL se ve así:
 ```
 https://discord.com/api/webhooks/1234567890/abcdef...xyz
 ```
 
-**Guarda cada URL. Una por canal.**
+**Guarda cada URL. Una por canal. Si no puedes crear el webhook en un canal compartido, pídele a la administradora del servidor que te dé permiso de "Gestionar Webhooks" en ese canal.**
 
 ### Paso 2.4 — Probar el webhook
 
@@ -145,6 +156,8 @@ export TELEGRAM_GROUP_ID="-1234567890"
 # Discord
 export DISCORD_WEBHOOK_BITACORA="https://discord.com/api/webhooks/..."
 export DISCORD_WEBHOOK_LABORATORIO="https://discord.com/api/webhooks/..."
+export DISCORD_WEBHOOK_DECISIONES="https://discord.com/api/webhooks/..."
+export DISCORD_WEBHOOK_PUENTE="https://discord.com/api/webhooks/..."
 ```
 
 Guarda con `Ctrl+O`, cierra con `Ctrl+X`.
