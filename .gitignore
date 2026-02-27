@@ -1,0 +1,10 @@
+# Nunca subir al repo público
+.env
+.env.*
+!.env.example
+*.json
+*.pem
+*.key
+.DS_Store
+node_modules/
+__pycache__/
