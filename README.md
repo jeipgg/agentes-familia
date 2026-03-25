@@ -33,10 +33,11 @@ Roles probados en ecosistemas reales. Úsalos como punto de partida — renómbr
 | **Arquitecto Técnico** | `agents/roles/arquitecto-tecnico.md` | Valida propuestas técnicas. Audita deuda. Revisa código. |
 | **QA & Testing** | `agents/roles/qa-testing.md` | Diseña y ejecuta pruebas. Nada sale sin pasar por aquí. |
 | **Asesor Legal** | `agents/roles/asesor-legal.md` | Revisa contratos, redacta borradores, alerta vencimientos. |
+| **Arquitecto de Procesos** | `agents/roles/arquitecto-procesos.md` | Diagnostica fricciones, crea SOPs ejecutables, ciclo PDCA. Skills transversales: flowchart Mermaid, RACI, feedback. |
 
 ### ¿Cuál necesito primero?
 
-Si estás empezando: **Orquestador + Guardián del Bienestar + uno según tu contexto** (financiero, operativo o técnico). Los tres juntos forman la triada mínima.
+Si estás empezando: **Orquestador + Guardián del Bienestar + uno según tu contexto** (financiero, operativo o técnico). Los tres juntos forman la triada mínima. Si tu ecosistema ya opera y quieres que los procesos escalen: suma el **Arquitecto de Procesos** — es el rol que convierte el conocimiento tácito en procedimientos que cualquiera puede ejecutar.
 
 ## Estructura del Repo
 
